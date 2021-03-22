@@ -1,0 +1,6 @@
+{
+    "url": "https://eda.yandex/api/v1/user/request_authentication_code",
+    "json": {
+        "phone_number": "+$phone"
+    }
+}

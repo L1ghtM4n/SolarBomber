@@ -1,0 +1,6 @@
+{
+    "url": "https://my.telegram.org/auth/send_password",
+    "data": {
+        "phone": "+$phone"
+    }
+}

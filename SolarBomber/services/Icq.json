@@ -1,0 +1,11 @@
+{
+    "url": "https://www.icq.com/smsreg/requestPhoneValidation.php",
+    "data": {
+        "msisdn": "$phone",
+        "r": "46763",
+        "locale": "en",
+        "version": "1", 
+        "countryCode": "ru",
+        "k": "ic1rtwz1s1Hj1O0r"
+    }
+}

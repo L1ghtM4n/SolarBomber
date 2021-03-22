@@ -1,0 +1,9 @@
+{
+    "url": "https://mobile-api.qiwi.com/oauth/authorize",
+    "data": {
+        "username": "$phone", 
+        "client_id": "android-qw", 
+        "client_secret": "zAm4FKq9UnSe7id",
+        "response_type": "urn:qiwi:oauth:response-type:confirmation-id"
+    }
+}

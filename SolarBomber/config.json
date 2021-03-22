@@ -1,0 +1,13 @@
+{
+    "connection": {
+        "threads": 3,
+        "timeout": 1,
+        "proxies": {
+            "enabled": false,
+            "requests": {
+                "http": "socks5://127.0.0.1:9050",
+                "https": "socks5://127.0.0.1:9050"
+            }
+        }
+    }
+}

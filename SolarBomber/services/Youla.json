@@ -1,0 +1,6 @@
+{
+    "url": "https://youla.ru/web-api/auth/request_code",
+    "data": { 
+        "phone": "$phone" 
+    }
+}

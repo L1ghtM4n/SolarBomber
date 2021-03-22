@@ -1,0 +1,4 @@
+rich
+faker
+pyfiglet
+requests[socks]

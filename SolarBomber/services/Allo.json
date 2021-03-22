@@ -1,0 +1,10 @@
+{
+    "url": "https://allo.ua/ua/customer/account/createPostVue/?currentTheme=main&currentLocale=uk_UA",
+    "data": {
+        "email": "$email",
+        "telephone": "$phone",
+        "password":"$password",
+        "firstname": "$firstname",
+        "form_key":"Zqqj7CyjkKG2ImM8"
+    }
+}

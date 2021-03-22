@@ -1,0 +1,9 @@
+{
+    "url": "https://cloud.mail.ru/api/v2/notify/applink",
+    "json": {
+        "api": 2, 
+        "email": "email",
+        "x-email": "x-email",
+        "phone": "+$phone"
+    }
+}

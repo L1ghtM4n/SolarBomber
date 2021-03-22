@@ -1,0 +1,6 @@
+{
+    "url": "https://auth.multiplex.ua/login",
+    "json": {
+        "login": "+$phone"
+    }
+}
