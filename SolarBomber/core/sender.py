@@ -11,27 +11,12 @@ from urllib.parse import urljoin
 from warnings import filterwarnings
 from requests import Session
 from requests.exceptions import ConnectTimeout, ReadTimeout
+# Import packages
+from core.placeholders import replace_placeholders, user_agent
 
 # Ignore warnings
 filterwarnings("ignore")
-# Init faker
-faker = Faker()
 
-""" Replace values in request data """
-def _replace_values(phone: str, data: dict) -> dict:
-    # Replace map
-    replace_map = {
-        "$phone": lambda: phone,
-        "$username": faker.user_name,
-        "$password": faker.password,
-        "$firstname": faker.first_name,
-    }.items()
-    # Replace data
-    for dk, dv in data.items():
-        for rk, rv in replace_map:
-            if type(dv) == str and rk in dv:
-                data[dk] = dv.replace(rk, rv())
-    return data
 
 """ Request sender object """
 class request_sender(object):
@@ -42,12 +27,12 @@ class request_sender(object):
         self.proxies = proxies
         self.timeout = timeout
         # Get json, data, params
-        self.json = _replace_values(phone, service["json"]) if "json" in service else {}
-        self.data = _replace_values(phone, service["data"]) if "data" in service else {}
-        self.params = _replace_values(phone, service["params"]) if "params" in service else {}
+        self.json = replace_placeholders(phone, service["json"]) if "json" in service else {}
+        self.data = replace_placeholders(phone, service["data"]) if "data" in service else {}
+        self.params = replace_placeholders(phone, service["params"]) if "params" in service else {}
         # Set default headers
         self.headers = {
-            "User-Agent": faker.user_agent(),
+            "User-Agent": user_agent,
             "Referer":  urljoin(service["url"], '/'),
             "X-Requested-With": "XMLHttpRequest",
             "Connection": "keep-alive",
