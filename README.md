@@ -1,3 +1,10 @@
+
+
+<p align="center">
+    <img alt="Made with Python" src="http://ForTheBadge.com/images/badges/made-with-python.svg">
+    <img alt="Yeah" src="http://ForTheBadge.com/images/badges/built-with-love.svg">
+</p>  
+
 # :sunny: SolarBomber
 Simple SMS Bomber written on *python* with custom services support 
 
@@ -18,7 +25,7 @@ Simple SMS Bomber written on *python* with custom services support
 ```
 
 ### :comet: Placeholders table for custom services:
-|   Placeholder    |  Example rando, output  |
+|   Placeholder    |  Example random, output  |
 | ------------- | ------------- |
 | $phone  | +380505552634(from user)  |
 | $username  |  williamsderek  |
